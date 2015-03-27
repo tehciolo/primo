@@ -1,0 +1,15 @@
+{
+  "name": "primo",
+  "version": "1.0.0",
+  "description": "A Sassy frontend starter kit powered by npm, bower and gulp.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tehciolo/primo.git"
+  },
+  "author": "tehciolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tehciolo/primo/issues"
+  },
+  "homepage": "https://github.com/tehciolo/primo"
+}
