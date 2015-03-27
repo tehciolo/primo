@@ -11,5 +11,10 @@
   "bugs": {
     "url": "https://github.com/tehciolo/primo/issues"
   },
-  "homepage": "https://github.com/tehciolo/primo"
+  "homepage": "https://github.com/tehciolo/primo",
+  "devDependencies": {
+    "browser-sync": "^2.4.0",
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3"
+  }
 }
