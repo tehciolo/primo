@@ -25,14 +25,21 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
+// Markup Task
+// Compiles HTML
+gulp.task('markup', function () {
+  gulp.src('./*.html')
+    .pipe(gulp.dest('build'));
+});
+
 // Watch Task
-gulp.task('watch', ['scripts', 'styles'], function() {
+gulp.task('watch', ['scripts', 'styles', 'markup'], function() {
   browserSync({
     server: "./build"
   });
   gulp.watch('assets/scss/**/*.scss', ['styles']);
   gulp.watch('assets/js/*.js', ['scripts']);
-  gulp.watch('build/*.html').on('change', reload);
+  gulp.watch('*.html', ['markup']).on('change', reload);
 });
 
 
